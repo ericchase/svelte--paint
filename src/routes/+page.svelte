@@ -62,15 +62,5 @@
 	}
 </script>
 
-<div>
-	<h1>Paint</h1>
-	<PaintBox bind:this={paintbox} on:points={onPoints} brush={0x000000ff} color="white" width={600} height={800} />
-</div>
-
-<style>
-	div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-</style>
+<h1>Paint</h1>
+<PaintBox bind:this={paintbox} on:points={onPoints} brush={0x000000ff} color="white" width={600} height={800} />
