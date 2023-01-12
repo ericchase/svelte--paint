@@ -37,7 +37,9 @@
 	function onMessage(event: MessageEvent<string>) {
 		if (paintbox) {
 			const [brush, ...rest] = event.data.split('\n');
-			const points = rest.map((_) => _.split('.')).map(([x, y]) => [Number.parseInt(x), Number.parseInt(y)]);
+			const points = rest
+				.map((_) => _.split('.'))
+				.map(([x, y]) => [Number.parseInt(x), Number.parseInt(y)]);
 			paintbox.setBrush(Number.parseInt(brush));
 			paintbox.plotPoints(points);
 		}
@@ -63,4 +65,11 @@
 </script>
 
 <h1>Paint</h1>
-<PaintBox bind:this={paintbox} on:points={onPoints} brush={0x000000ff} color="white" width={600} height={800} />
+<PaintBox
+	bind:this={paintbox}
+	on:points={onPoints}
+	brush={0x000000ff}
+	color="white"
+	width={600}
+	height={800}
+/>
