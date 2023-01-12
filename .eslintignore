@@ -2,7 +2,6 @@
 node_modules
 /build
 /build-fly.io
-/fly.io-files
 /.svelte-kit
 /package
 .env
