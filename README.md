@@ -1,6 +1,8 @@
 ## Live Site
 
-[ericchase--paint.fly.dev](https://ericchase--paint.fly.dev/)
+~~[ericchase--paint.fly.dev](https://ericchase--paint.fly.dev/)~~
+
+I've shutdown the server, as the demo isn't very useful.
 
 ## Notes
 
